@@ -13,7 +13,7 @@ This repository hosts the public support website for the **Scriptures: Review an
 5. (Optional) Add a custom domain under **Settings → Pages → Custom domain**, and enable **Enforce HTTPS**.
 
 ## Customize
-- Find and replace placeholders: `nickmshelley@gmail.com`, `{{DEVELOPER_NAME}}`.
+- Find and replace placeholders: `nickmshelley@gmail.com`, `Nick Shelley`.
 - Edit `faq.html` and `privacy.html` to match your app’s specifics.
 - To prevent Jekyll processing advanced folders, we include a `.nojekyll` file.
 
