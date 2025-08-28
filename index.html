@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{APP_NAME}} — Support</title>
+  <meta name="description" content="Support, FAQs, and contact for the {{APP_NAME}} iOS app." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/">{{APP_NAME}}</a>
+      <div class="spacer"></div>
+      <a href="#contact">Contact</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>{{APP_NAME}} Support</h1>
+    <p>Welcome! This page provides quick help, answers to common questions, and a direct way to contact the developer.</p>
+  </section>
+
+  <main class="panel">
+    <div class="card">
+      <h2>Get Help Fast</h2>
+      <p>Check the <a href="faq.html">FAQ</a> for common questions about setup, accounts, purchases, notifications, and troubleshooting.</p>
+      <p>If you still need help, use the contact form below or email <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>.</p>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Send a message and we’ll get back to you. Typical response time: 1–2 business days.</p>
+      <!-- This is a simple mailto-based form. For a serverless form service, replace the action with your provider. -->
+      <form method="POST" action="mailto:{{SUPPORT_EMAIL}}" enctype="text/plain">
+        <label for="name">Name</label>
+        <input id="name" name="name" placeholder="Your name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+        <div style="margin-top:12px">
+          <button class="btn" type="submit">Send</button>
+        </div>
+        <small class="note">Submitting opens your email client with a pre-filled message. If that doesn’t work, email <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>.</small>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Privacy</h2>
+      <p>Read the <a href="privacy.html">Privacy Policy</a> to learn how data is handled in {{APP_NAME}}.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div>&copy; 2025 {{DEVELOPER_NAME}}. All rights reserved.</div>
+    <div>Version 1.0 · Last updated 2025-08-28</div>
+  </footer>
+</body>
+</html>
